@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "nodemon index.js",
-    "install": "bower install"
+    "install": "bower install --allow-root"
   },
   "repository": {
     "type": "git",
