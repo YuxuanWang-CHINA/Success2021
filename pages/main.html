@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Success2021-title</title>
+    <link rel="stylesheet" href="/cdn/reset/index.css">
+    <link rel="stylesheet" href="/front/success2021-title/style.css">
+    <link rel="stylesheet" href="/cdn/pure/index.css">
+    <script src="/cdn/echarts/index.js"></script>
+    <script src="/cdn/axios/index.js"></script>
+
+    <style>
+        #pushb{
+            z-index:3
+        }
+
+        .main{
+            z-index:4;
+            height: 400px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pure-g" style="width:100%">
+        <div id="welcome" class="pure-u-1">
+            <h1>Success2021</h1>
+        </div>
+
+        <div id="pushb" class="pure-u-1">
+            <form id="pushb" class="pure-form">
+                <fieldset>
+                    <div class="pure-u-1-5">
+                        <input id="cs" class="pure-input-1" type="text" placeholder="center-score">
+                    </div>
+                    <div class="pure-u-1-5">
+                        <input id="sg" class="pure-input-1" type="text" placeholder="sigma">
+                    </div>
+                    <div class="pure-u-1-5">
+                        <input id="tp" class="pure-input-1" type="text" placeholder="total people">
+                    </div>
+                    <button id="geneb" type="button" class="pure-button pure-button-disabled">Gene</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="pure-u-1">
+            <div id="main1" class="main pure-u-2-5"></div>
+            <div id="main2" class="main pure-u-2-5"></div>
+        </div>
+    </div>
+
+    <script src='/cdn/three/index.js'></script>
+    <script src="/front/success2021-title/index.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

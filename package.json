@@ -1,0 +1,33 @@
+{
+  "name": "success2021",
+  "version": "1.0.0",
+  "description": "Analyze 2021 New Gaokao Policy of Jiangsu province in China by Python and Node.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuxuanWang-CHINA/Success2021.git"
+  },
+  "author": "YuxuanWang-CHINA",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/YuxuanWang-CHINA/Success2021/issues"
+  },
+  "homepage": "https://github.com/YuxuanWang-CHINA/Success2021#readme",
+  "nodemonConfig": {
+    "ignore": [
+      "data/*"
+    ]
+  },
+  "dependencies": {
+    "child-process-promise": "^2.2.1",
+    "express": "^4.16.4",
+    "fs-extra": "^8.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}

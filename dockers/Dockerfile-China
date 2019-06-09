@@ -1,0 +1,14 @@
+FROM nikolaik/python-nodejs:python3.7-nodejs10
+
+COPY ./dockers/pip.conf /root/.pip/
+COPY . /root/project25/
+
+WORKDIR /root/project25
+
+RUN npm config set registry http://registry.npm.taobao.org/ \
+    && pip install numpy scipy matplotlib \
+    && npm install
+
+EXPOSE 3000
+
+CMD ["sh", "-c", "npm start"]
