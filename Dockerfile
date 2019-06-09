@@ -6,7 +6,7 @@ WORKDIR /root/project25
 
 RUN pip install numpy scipy matplotlib \
     && npm install \
-    && bower install
+    && npm run install
 
 EXPOSE 3000
 

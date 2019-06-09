@@ -7,7 +7,8 @@ WORKDIR /root/project25
 
 RUN npm config set registry http://registry.npm.taobao.org/ \
     && pip install numpy scipy matplotlib \
-    && npm install
+    && npm install \
+    && npm run install
 
 EXPOSE 3000
 
